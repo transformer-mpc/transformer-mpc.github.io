@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description"
+        content="Decentralized Safe and Scalable Multi-Agent Control Under Limited Actuation">
+  <meta name="keywords" content="maicbf, ICBFs, MPC-CBF">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>maicbf</title>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+
+    gtag('config', 'G-PYVRSFMDRL');
+  </script>
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+        rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+  <link rel="icon" href="./static/images/ai.svg">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+</head>
+<body>
+
+<nav class="navbar" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand">
+    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
+  </div>
+  <div class="navbar-menu">
+    <div class="navbar-start" style="flex-grow: 1; justify-content: center;">
+      <a class="navbar-item" href="https://maicbf.github.io/">
+      <span class="icon">
+          <i class="fas fa-home"></i>
+      </span>
+      </a>
+
+<!--       <div class="navbar-item has-dropdown is-hoverable"> -->
+<!--         <a class="navbar-link">
+          More Research
+        </a> -->
+<!--         <div class="navbar-dropdown"> -->
+<!--           <a class="navbar-item" href="https://hypernerf.github.io">
+            HyperNeRF
+          </a> -->
+<!--           <a class="navbar-item" href="https://nerfies.github.io">
+            Nerfies
+          </a> -->
+<!--           <a class="navbar-item" href="https://latentfusion.github.io">
+            LatentFusion
+          </a> -->
+<!--           <a class="navbar-item" href="https://photoshape.github.io">
+            PhotoShape
+          </a> -->
+<!--         </div> -->
+<!--       </div> -->
+    </div>
+
+  </div>
+</nav>
+
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-1 publication-title">Decentralized Safe and Scalable Multi-Agent Control Under Limited Actuation</h1>
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">
+              <a href="https://vrushabh27.github.io/vrushabh_zinage/">Vrushabh Zinage</a><sup>1</sup>,</span>
+            <span class="author-block">
+              <a href="https://github.com/abj247">Abhishek Jha</a><sup>2</sup>,</span>
+            <span class="author-block">
+              <a href="https://engineering.virginia.edu/faculty/rohan-chandra">Rohan Chandra</a><sup>3</sup>,
+            </span>
+            <span class="author-block">
+              <a href="https://sites.utexas.edu/ebakolas/">Efstathios Bakolas </a><sup>1</sup>,
+            </span>
+<!--             <span class="author-block">
+              <a href="https://www.danbgoldman.com">Dan B Goldman</a><sup>2</sup>,
+            </span> -->
+<!--             <span class="author-block">
+              <a href="https://homes.cs.washington.edu/~seitz/">Steven M. Seitz</a><sup>1,2</sup>,
+            </span> -->
+<!--             <span class="author-block">
+              <a href="http://www.ricardomartinbrualla.com">Ricardo Martin-Brualla</a><sup>2</sup>
+            </span> -->
+          </div>
+
+          <div class="is-size-5 publication-authors">
+            <span class="author-block"><sup>1</sup>University of Texas at Austin, </span>
+            <span class="author-block"><sup>2</sup>Delhi Technological University, </span>
+            <span class="author-block"><sup>3</sup>University of Virginia</span>
+          </div>
+
+          <div class="column has-text-centered">
+            <div class="publication-links">
+              <!-- PDF Link. -->
+              <span class="link-block">
+                <a href=""
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                  </span>
+                  <span>Paper</span>
+                </a>
+              </span>
+              <span class="link-block">
+                <a href=""
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>arXiv</span>
+                </a>
+              </span>
+              <!-- Video Link. -->
+<!--               <span class="link-block">
+                <a href="https://www.youtube.com/watch?v=MrKrnHhk8IA"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-youtube"></i>
+                  </span>
+                  <span>Video</span>
+                </a>
+              </span> -->
+              <!-- Code Link. -->
+              <span class="link-block">
+                <a href="https://github.com/abj247/maicbf"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-github"></i>
+                  </span>
+                  <span>Code</span>
+                  </a>
+              </span>
+              <!-- Dataset Link. -->
+<!--               <span class="link-block">
+                <a href="https://github.com/google/nerfies/releases/tag/0.1"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="far fa-images"></i>
+                  </span>
+                  <span>Data</span> -->
+<!--                   </a> -->
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<!-- <section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <video id="teaser" autoplay muted loop playsinline height="100%">
+        <source src="./static/videos/teaser.mp4"
+                type="video/mp4">
+      </video>
+      <h2 class="subtitle has-text-centered">
+        <span class="dnerf">Nerfies</span> turns selfie videos from your phone into
+        free-viewpoint
+        portraits.
+      </h2>
+    </div>
+  </div>
+</section> -->
+
+
+<!-- <section class="hero is-light is-small">
+  <div class="hero-body">
+    <div class="container">
+      <div id="results-carousel" class="carousel results-carousel">
+        <div class="item item-steve">
+          <video poster="" id="steve" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/steve.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-chair-tp">
+          <video poster="" id="chair-tp" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/chair-tp.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-shiba">
+          <video poster="" id="shiba" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/shiba.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-fullbody">
+          <video poster="" id="fullbody" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/fullbody.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-blueshirt">
+          <video poster="" id="blueshirt" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/blueshirt.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-mask">
+          <video poster="" id="mask" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/mask.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-coffee">
+          <video poster="" id="coffee" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/coffee.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-toby">
+          <video poster="" id="toby" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/toby2.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+      </div>
+    </div>
+  </div>
+</section> -->
+
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+In this paper, we consider the problem of safe and deadlock-free control for multiple agents operating in an environment with obstacles and other agents under limited actuation. We propose a joint-learning framework where the decentralized control policy and Integral Control Barrier
+Functions (ICBF), which act as safety certificates for input-constrained nonlinear systems, are learned simultaneously. As the neural control policy provides only probabilistic guarantees
+for collision avoidance, we embed a novel computationally light decentralized MPC Integral Control Barrier Functions (MPC-ICBF) into the neural network policy to guarantee safety as
+well as scalability. By drawing an analogy between minimizing non-convex loss functions by well-established gradient methods in machine learning and the problem of local minima, we
+propose a novel approach that is augmented with the proposed learning framework to minimize deadlocks. Numerical simulations demonstrate that our approach outperforms other
+state of the art multi-agent control algorithms in terms of safety, input constraint satisfaction, and number of deadlocks. Furthermore, we show good generalization capabilities across
+different scenarios with varying numbers of agents up to 1000
+agents.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!--/ Abstract. -->
+
+     <!-- GIFs Section -->
+<!--     <div class="columns is-centered has-text-centered">
+      <div class="column">
+        <figure class="image">
+          <img src="./static/images/ours_trajectory_256_agents_MAZE.gif" alt="256 agents" style="width: 1500px; height: auto;">
+          <figcaption>256 Agents</figcaption>
+        </figure>
+      </div>
+      <div class="column">
+        <figure class="image">
+          <img src="./static/images/ours_trajectory_1024_agents_MAZE.gif" alt="1024 agentsF" style="width: 1500px; height: auto;">
+          <figcaption>1024 Agents</figcaption>
+        </figure>
+      </div>
+    </div>
+    <!--/ GIFs Section -->
+<!--   </div> -->
+<!-- </section>  -->
+
+
+<!-- GIFs Section -->
+<!-- <div class="columns is-centered has-text-centered">
+  <div class="column">
+    <figure class="image">
+      <img src="./static/images/ours_trajectory_16_agents_empty_itr_08_fps_5_trailing.gif" alt="swap agents">
+      <figcaption>16 Agents swapping in trailing fashion</figcaption>
+    </figure>
+  </div>
+  <div class="column">
+    <figure class="image">
+      <img src="./static/images/ours_trajectory_16_agents_empty_fps_10_trailing_random.gif" alt="ramdpm agents">
+      <figcaption>16 agents randomly navigating in trailing fashion</figcaption>
+    </figure>
+  </div>
+</div> 
+
+<div class="columns is-centered has-text-centered">
+  <div class="column">
+    <figure class="image">
+      <img src="./static/images/ours_trajectory_1024_agents_MAZE.gif" alt="maze_1024">
+      <figcaption>1024 Agents in Maze Environment</figcaption>
+    </figure>
+  </div>
+  <div class="column">
+    <figure class="image">
+      <img src="./static/images/maicbf_trajectory_1024_agents_empty.gif" alt="empty_1024">
+      <figcaption>1024 Agents in Empty Space</figcaption>
+    </figure>
+  </div>
+</div> -->
+
+<!-- New centered GIF with caption -->
+<div class="columns is-centered has-text-centered">
+  <div class="column is-half">
+    <figure class="image">
+      <img src="./static/images/ours_trajectory_16_agents_empty_2_fps_10_trailing_random.gif" alt="16 agents trailing">
+<!--       <figcaption>16 agents randomly navigating</figcaption> -->
+    </figure>
+  </div>
+</div>
+
+<!-- Captions Section -->
+<!-- <div class="columns is-centered has-text-centered">
+  <div class="column">
+    <figcaption>256 Agents in Maze</figcaption>
+  </div>
+  <div class="column">
+    <figcaption>1024 Agents in Maze</figcaption>
+  </div>
+  <div class="column">
+    <figcaption>256 Agents in Empty Space/figcaption>
+  </div>
+  <div class="column">
+    <figcaption>1024 Agents in Empty Space</figcaption>
+  </div> -->
+<!-- </div> -->
+<!--/ GIFs Section -->
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Highlights. -->
+    <div class="columns is-centered">
+      <div class="column is-full-width">
+        <h2 class="title is-3">Proposed Approach</h2>
+        <figure class="image is-centered">
+          <img src="./static/images/approach.png" alt="Proposed Approach">
+        </figure>
+        <div class="content has-text-justified">
+          <p>
+            Our proposed approach jointly learns a safe decentralized control policy and an Integral Control Barrier Functions (ICBF) based certificate to ensure safety as well as input constraint satisfaction. The approach is divided into two main phases: Training and Execution.
+          </p>
+          
+          <!-- Training Phase -->
+          <p>
+            <strong>Training Phase:</strong> The first step involves the joint learning of the Neural Integral Control Barrier Function (NICBF) certificates and a decentralized safe control policy that enables the N agents to reach their respective goals. Since the control policies are parameterized by neural networks, they do not provide complete safety guarantees for the agents. Furthermore, as N increases, the likelihood of deadlock increases.
+          </p>
+          
+          <!-- Execution Phase -->
+          <p style="margin-top: 20px;">
+            <strong>Execution Phase:</strong> To address these limitations, the second step involves developing theoretical frameworks to augment the NN policy from the first step, ensuring collision avoidance and minimizing deadlocks. For complete collision avoidance guarantees, we switch to a decentralized MPC-ICBF control policy whenever a potential collision with neighbors is detected using the NN policy. We draw an analogy between deadlocks and minimizing non-convex loss functions and propose a method to modify the control input to reduce deadlocks. 
+            
+          
+          </p>
+          
+          
+            
+            
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Environments. -->
+    <div class="columns is-centered">
+      <div class="column is-full-width">
+        <h2 class="title is-3">Environments</h2>
+        <figure class="image is-centered">
+          <img src="./static/images/env.png" alt="Environments">
+        </figure>
+        <div class="content has-text-justified">
+          <p>
+            The experiments in this research were conducted in two distinct environments: an empty environment and a maze environment. 
+<!--             These environments were selected to test the robustness and scalability of the proposed control framework under different levels of complexity. -->
+          </p>
+
+<!--           <p>
+            <strong>Empty Environment:</strong> In the empty environment, agents are placed in an open space without any obstacles. This setup allows for a straightforward assessment of the control policy's ability to navigate agents towards their targets without any interference. It serves as a baseline to evaluate the basic functionality of the proposed approach, ensuring that it can handle simple scenarios efficiently and avoid unnecessary collisions.
+          </p>
+
+          <p>
+            <strong>Maze Environment:</strong> The maze environment introduces a more complex and challenging scenario where agents must navigate through the environment with multiple walls and obstacles. This environment is designed to test the control framework's ability to handle more intricate navigation tasks, where the likelihood of collisions and deadlocks increases significantly. The maze environment is crucial for evaluating the scalability and safety of the approach, especially when dealing with a large number of agents in a confined space.
+          
+
+          
+            These two environments were chosen to demonstrate the effectiveness of the proposed approach in both simple and complex scenarios. The results from these environments provides the approach's effectiveness to maintain safety, avoid collisions, and minimize deadlocks across different levels of environmental complexity. -->
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Environments. -->
+    <div class="columns is-centered">
+      <div class="column is-full-width">
+        <h2 class="title is-3">Collision avoidance</h2>
+        <figure class="image is-centered">
+          <img src="./static/images/collisions.png" alt="Results">
+        </figure>
+        <div class="content has-text-justified">
+          <p>
+Our proposed approach guarantees 100% collision avoidance, regardless of the number of agents in both empty as well as maze environments. This scalability feature is particularly significant, as it allows our approach to handle scenarios with more than 1000 agents effectively.
+          </p>
+
+
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+    <section class="section">
+  <div class="container is-max-desktop">
+    <!-- Environments. -->
+    <div class="columns is-centered">
+      <div class="column is-full-width">
+        <h2 class="title is-3">Deadlocks</h2>
+        <figure class="image is-centered">
+          <img src="./static/images/deadlocks.png" alt="Results">
+        </figure>
+        <div class="content has-text-justified">
+          <p>
+As observed, there is a significant reduction in deadlocks among agents in both empty and maze environments by leveraging our proposed deadlock minimization mechanism. 
+Furthermore, the average number of deadlocks increases with the number of agents. However, our proposed method MA-ICBF successfully minimizes deadlocks while ensuring that the trajectories are safe. In addition, the safety and scalability of \ours are not compromised during deadlock minimization.  
+          </p>
+
+
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!--         <section class="section"> -->
+  <div class="container is-max-desktop">
+    <!-- Environments. -->
+    <div class="columns is-centered">
+      <div class="column is-full-width">
+        <h2 class="title is-3">Input constraint satisfaction</h2>
+        <figure class="image is-centered">
+          <img src="./static/images/input_constraints.png" alt="Results">
+        </figure>
+        <div class="content has-text-justified">
+          <p>
+In real-world scenarios, robots have limited actuation capabilities and cannot exceed certain control limits. 
+ Therefore, it becomes critical for the designed safe decentralized controller to satisfy input constraints to ensure the feasible deployment of robots. As observed from the Fig., our proposed approach (MA-ICBF) successfully keeps all agents within these constraints, with no violations. In contrast, prior methods show a significant increase in input constraint violation (especially for 1024 agents).
+          </p>
+
+
+        </div>
+      </div>
+    </div>
+  </div>
+<!-- </section> -->
+
+            <section class="section">
+  <div class="container is-max-desktop">
+    <!-- Environments. -->
+    <div class="columns is-centered">
+      <div class="column is-full-width">
+        <h2 class="title is-3">Computational time</h2>
+        <figure class="image is-centered">
+          <img src="./static/images/comp_time.png" alt="Results">
+        </figure>
+        <div class="content has-text-justified">
+          <p>
+MA-ICBF can provide safety guarantees as well as input constraint satisfaction even for a large number of agents with compromising on the overall computational load (runtime in ms) as the number of agents increases, thereby showing good scalability. 
+          </p>
+
+
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+<footer class="footer">
+  <div class="container">
+    <div class="content has-text-centered">
+      <a class="icon-link"
+         href="">
+        <i class="fas fa-file-pdf"></i>
+      </a>
+      <a class="icon-link" href="https://github.com/abj247/maicbf" class="external-link" disabled>
+        <i class="fab fa-github"></i>
+      </a>
+    </div>
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+          <p>
+            This website is licensed under a <a rel="license"
+                                                href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
+            Commons Attribution-ShareAlike 4.0 International License</a>.
+          </p>
+          <p>
+            This means you are free to borrow the <a
+              href="https://github.com/nerfies/nerfies.github.io">Nerfies</a> website,
+            we just ask that you link back to this page in the footer.
+            Please remember to remove the analytics code included in the header of the website which
+            you do not want on your website.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
