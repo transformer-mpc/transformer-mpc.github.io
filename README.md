@@ -18,7 +18,3 @@
    [![arXiv](https://img.shields.io/badge/arXiv-2408.10154-blue?logo=arxiv&color=%23B31B1B)](https://transformer-mpc.github.io/) [![ProjectPage](https://img.shields.io/badge/Project_Page-MAICBF-blue)]([https://transformer-mpc.github.io/](https://transformer-mpc.github.io/))
   <div align="center"></div>
 </p>
-
-
-
-TransformerMPC: Accelerating Model Predictive Control via Transformers
