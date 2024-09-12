@@ -405,28 +405,27 @@ All benchmarking experiments were performed on a desktop equipped with an Intel(
     <!-- Environments. -->
     <div class="columns is-centered">
       <div class="column is-full-width">
-        <h2 class="title is-3">Collision avoidance</h2>
+        <h2 class="title is-3">Computational efficiency</h2>
         <div class="columns">
           <div class="column">
             <figure class="image">
-              <img src="./static/images/collisions.png" alt="Results 1">
+              <img src="./static/images/comp1.png" alt="Results 1">
             </figure>
           </div>
           <div class="column">
             <figure class="image">
-              <img src="./static/images/collisions.png" alt="Results 2">
+              <img src="./static/images/comp2.png" alt="Results 2">
             </figure>
           </div>
             <div class="column">
             <figure class="image">
-              <img src="./static/images/collisions.png" alt="Results 2">
+              <img src="./static/images/comp3.png" alt="Results 2">
             </figure>
           </div>
         </div>
         <div class="content has-text-justified">
           <p>
-            Our proposed approach guarantees 100% collision avoidance, regardless of the number of agents in both empty as well as maze environments. This scalability feature is particularly significant, as it allows our approach to handle scenarios with more than 1000 agents effectively.
-          </p>
+For the wheeled biped robot, the TransformerMPC significantly reduces computational time across all solvers. Notably, for CVXOPT (in 1e-2s), there is a reduction from 1.1549 to 0.1698 (6.8x improvement), and qpOASES (in 1e-2s) from 1.3923 to 0.1698 (8.19x improvement). Even solvers with initially lower computational times, such as DAQP and ProxQP (in 1e-2s), benefit from TransformerMPC, with reductions to 0.0174 and 0.0227, respectively.           </p>
         </div>
       </div>
     </div>
