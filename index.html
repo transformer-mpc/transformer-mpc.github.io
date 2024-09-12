@@ -432,6 +432,31 @@ For the wheeled biped robot, the TransformerMPC significantly reduces computatio
   </div>
 </section>
 
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Environments. -->
+    <div class="columns is-centered">
+      <div class="column is-full-width">
+        <h2 class="title is-3">Computational efficiency</h2>
+        <div class="columns">
+          <div class="column">
+            <figure class="image">
+              <img src="./static/images/comparison.png" alt="Results 1">
+            </figure>
+          </div>
+          <div class="column">
+            <figure class="image">
+              <img src="./static/images/constraint.png" alt="Results 2">
+            </figure>
+          </div>
+        </div>
+        <div class="content has-text-justified">
+          <p>
+For these numerical experiments, we employed an 80-20 train-test split of the dataset, using 80% of the data for training the models and 20% for testing. Figure 1 presents the prediction accuracy on test data for different learning models in predicting inactive constraints across the three robotic systems. Among the models, the learned transformer model consistently achieves the highest accuracy, with 89% for wheeled biped robot, 92% for quadrotor, and 95.8% for humanoid. In contrast, other learned models, including MLP, Random Forest, Gradient Boosting, Support Vector Machine (SVM), and Logistic Regression, show significantly lower accuracy across all systems. These results highlight the efficacy of the learned transformer model in accurately predicting inactive constraints. TransformerMPC achieves significant inactive constraint reductions across all systems, with an 89.0% reduction for the wheeled biped, 93.6% for the quadrotor, and 95.8% for the humanoid. These results demonstrate the effectiveness of TransformerMPC in simplifying the MPC problem by removing inactive constraints, particularly for high-dimensional and complex systems such as the wheeled biped and the Atlas humanoid robot, thereby enhancing computational efficiency.       </div>
+      </div>
+    </div>
+  </div>
+</section>
 
 <!--     <section class="section">
   <div class="container is-max-desktop">
