@@ -344,8 +344,7 @@ In this paper, we address the problem of reducing the computational burden of Mo
         </figure>
         <div class="content has-text-justified">
           <p>
-            Our proposed approach jointly learns a safe decentralized control policy and an Integral Control Barrier Functions (ICBF) based certificate to ensure safety as well as input constraint satisfaction. The approach is divided into two main phases: Training and Execution.
-          </p>
+Our proposed approach improves the computational efficiency of the MPC framework by incorporating a transformer-based attention mechanism to determine active constraints as well as better warm start initialization, which can be integrated with any state-of-the-art MPC solver. Additionally, we have a verifier step that checks whether the optimal control sequence synthesized using our simplified MPC problem with fewer constraints satisfies all the constraints of the original MPC problem. Note that TransformerMPC is applicable to general nonlinear MPC problems as well.          </p>
           
           <!-- Training Phase -->
           <p>
