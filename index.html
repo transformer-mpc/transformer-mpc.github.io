@@ -348,12 +348,12 @@ Our proposed approach improves the computational efficiency of the MPC framework
           
           <!-- Training Phase -->
           <p>
-            <strong>Training Phase:</strong> The first step involves the joint learning of the Neural Integral Control Barrier Function (NICBF) certificates and a decentralized safe control policy that enables the N agents to reach their respective goals. Since the control policies are parameterized by neural networks, they do not provide complete safety guarantees for the agents. Furthermore, as N increases, the likelihood of deadlock increases.
+            <strong>Learning Phase:</strong> In the learning phase, the transformer is trained on a dataset containing various MPC problem instances, where each instance is characterized by parameters such as initial conditions, reference trajectories etc. The transformer learns to map these parameters to the corresponding active constraints. Another transformer model is used for better warm start initialization that predicts a control sequence close to the optimal control sequence.
           </p>
           
           <!-- Execution Phase -->
           <p style="margin-top: 20px;">
-            <strong>Execution Phase:</strong> To address these limitations, the second step involves developing theoretical frameworks to augment the NN policy from the first step, ensuring collision avoidance and minimizing deadlocks. For complete collision avoidance guarantees, we switch to a decentralized MPC-ICBF control policy whenever a potential collision with neighbors is detected using the NN policy. We draw an analogy between deadlocks and minimizing non-convex loss functions and propose a method to modify the control input to reduce deadlocks. 
+            <strong>Execution Phase:</strong> In the execution phase, these trained models are used for real-time prediction of the active constraints for a given set of parameters as well as for better warm start initialization. This allows the MPC solver to ignore all the inactive constraints and focus solely on the active constraints, thereby reducing the computational burden while ensuring that the control objectives are met.
             
           
           </p>
@@ -377,7 +377,8 @@ Our proposed approach improves the computational efficiency of the MPC framework
         </figure>
         <div class="content has-text-justified">
           <p>
-            The experiments in this research were conducted in two distinct environments: an empty environment and a maze environment. 
+For our experiments, we consider three realistic MPC problems that are common in the robotics community. The first is that of balancing an Upkie wheeled biped robot. Second, we consider the problem of stabilizing a Crazyflie quadrotor from a random initial condition to a hovering position. Finally, we consider the problem of stabilizing an Atlas humanoid robot balancing on one foot.
+All benchmarking experiments were performed on a desktop equipped with an Intel(R) Core(TM) i9-10900K CPU @ 3.70GHz and an NVIDIA RTX A4000 GPU with 16 GB of GDDR6 memory.
 <!--             These environments were selected to test the robustness and scalability of the proposed control framework under different levels of complexity. -->
           </p>
 
